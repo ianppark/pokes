@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap");
+.normal {
+  background: #a8a878; }
+
+.fighting {
+  background: #c03028; }
+
+.flying {
+  background: #a890f0; }
+
+.poison {
+  background: #a040a0; }
+
+.ground {
+  background: #a8b820; }
+
+.rock {
+  background: #b8a038; }
+
+.bug {
+  background: #a8b820; }
+
+.ghost {
+  background: #68a090; }
+
+.steel {
+  background: #44685e; }
+
+.fire {
+  background: #f08030; }
+
+.water {
+  background: #6890f0; }
+
+.grass {
+  background: #78c850; }
+
+.electric {
+  background: #f8d030; }
+
+.psychic {
+  background: #f85888; }
+
+.ice {
+  background: #98d8d8; }
+
+.dragon {
+  background: #7038f8; }
+
+.dark {
+  background: #705848; }
+
+.fairy {
+  background: #ee99ac; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #121212;
+  color: white;
+  font-family: "Ubuntu", sans-serif; }
+
+.surface {
+  background: #121212; }
+
+.sticky-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  height: 8vh;
+  background: #121212; }
+
+.overlay1 {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.07); }
+
+.df {
+  display: flex; }
+
+.f-center-all {
+  align-items: center;
+  justify-content: center; }
+
+.button-grid {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(9, 1fr);
+  grid-gap: 1rem;
+  z-index: -1; }
+
+.type-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  border-radius: 10px; }
+
+.m-1 {
+  margin: 1rem; }
+
+.type-info {
+  background: #121212;
+  position: sticky;
+  bottom: 0;
+  height: 40vh;
+  margin: 0;
+  padding: 0; }
+
+.type-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 6fr; }
+
+.type-title {
+  grid-column: 1 / 3;
+  text-transform: capitalize; }
+
+.damage-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .damage-info p {
+    font-size: 0.9rem;
+    margin-bottom: 5px; }
+  .damage-info .badge-list {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+
+.badge {
+  padding: 2px 5px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin: 1px; }

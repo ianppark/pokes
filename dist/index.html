@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>PokeTypes</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="app-grid">
+      <header class="sticky-header">
+        <div class="overlay1 df f-center-all">
+          <h1>PokeTypes</h1>
+        </div>
+      </header>
+      <main class="m-1">
+        <div class="button-grid">
+          <div class="type-card normal">normal</div>
+          <div class="type-card fighting">fighting</div>
+          <div class="type-card flying">flying</div>
+          <div class="type-card poison">poison</div>
+          <div class="type-card ground">ground</div>
+          <div class="type-card rock">rock</div>
+          <div class="type-card bug">bug</div>
+          <div class="type-card ghost">ghost</div>
+          <div class="type-card steel">steel</div>
+          <div class="type-card fire">fire</div>
+          <div class="type-card water">water</div>
+          <div class="type-card grass">grass</div>
+          <div class="type-card electric">electric</div>
+          <div class="type-card psychic">psychic</div>
+          <div class="type-card ice">ice</div>
+          <div class="type-card dragon">dragon</div>
+          <div class="type-card dark">dark</div>
+          <div class="type-card fairy">fairy</div>
+        </div>
+      </main>
+      <footer class="type-info">
+        <div class="type-grid overlay1">
+          <h3 class="type-title normal df f-center-all">Normal</h3>
+          <p class="attack df f-center-all">Attack</p>
+          <p class="defend df f-center-all">Defend</p>
+          <div class="damage-info">
+            <p>Super Effective (x4)</p>
+            <div id="se-attack" class="badge-list"></div>
+            <p>Not Very Effective (x2)</p>
+            <div id="nve-attack" class="badge-list">
+              <div class="badge rock">rock</div>
+              <div class="badge steel">steel</div>
+            </div>
+            <p>No Effect (x0)</p>
+            <div id="ne-attack" class="badge-list">
+              <div class="badge ghost">ghost</div>
+            </div>
+          </div>
+          <div class="damage-info">
+            <p>Super Effective (x4)</p>
+            <div id="se-defend" class="badge-list">
+              <div class="badge fighting">fighting</div>
+            </div>
+            <p>Not Very Effective (x2)</p>
+            <div id="nve-defend" class="badge-list"></div>
+            <p>No Effect (x0)</p>
+            <div id="ne-defend" class="badge-list">
+              <div class="badge ghost">ghost</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
